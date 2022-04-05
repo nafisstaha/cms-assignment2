@@ -50,8 +50,7 @@
 				?>
 			</div><!-- .powered-by -->
 			<div class="d-flex">
-
-				<a href="" style="ml-5"> GitHub</a>
+				<a href="https://github.com/nafisstaha/cms-assignment2" style="ml-5"> GitHub</a>
 			</div>		
 
 		</div><!-- .site-info -->

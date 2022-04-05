@@ -24,13 +24,10 @@
 
 <body <?php body_class(); ?>>
 <header class="container">
-	<div>
 		<a href="<?php echo esc_url(home_url()); ?>">
 			<img src="<?php echo esc_url(home_url('wp-content/uploads/2022/04/6802231_astronomy_earth_galaxy_planet_science_icon.png')) ?>" alt="logo" width="100" height="100">
 		</a>
-	</div>
-</header>
-<nav>
+		<nav>
 		<?php
 			wp_nav_menu(array(
 				'menu' => 'main',
@@ -41,8 +38,8 @@
 				'container' => false,
 				'items_wrap' => '%3$s' 
 			));
-			
-
 		?>
 	</nav>
+</header>
+
 
