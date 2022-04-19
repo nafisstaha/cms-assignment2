@@ -637,3 +637,46 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+
+// widget
+function register_widget_areas(){
+	register_sidebar(array(
+		'name'          => 'Footer Area One',
+		'id'            => 'footer_area_one',
+		'description'   => 'This a widget area description.',
+		'before_widget' => '<section class="footer-area footer-area-one">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>', 
+	));
+	register_sidebar(array(
+		'name'          => 'Footer Area Two',
+		'id'            => 'footer_area_two',
+		'description'   => 'This a widget area description.',
+		'before_widget' => '<section class="footer-area footer-area-two">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>', 
+	));
+	register_sidebar(array(
+		'name'          => 'Footer Area Three',
+		'id'            => 'footer_area_three',
+		'description'   => 'This a widget area description.',
+		'before_widget' => '<section class="footer-area footer-area-three">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>', 
+	));
+	register_sidebar(array(
+		'name'          => 'Footer Area Four',
+		'id'            => 'footer_area_four',
+		'description'   => 'This a widget area description.',
+		'before_widget' => '<section class="footer-area footer-area-four">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>', 
+	));
+}
+
+add_action( 'widgets_init', 'register_widget_areas' );

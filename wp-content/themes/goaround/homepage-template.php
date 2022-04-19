@@ -6,7 +6,7 @@
     get_header();
 ?>
 
-<main class="container">
+<main class="container mx-auto">
     <?php
         //while(have_posts()) : the_post();
             //the_content();
@@ -16,11 +16,11 @@
     <!-- the custom advanced fields way -->
     <section class="masthead" style="background-image: url('<?php the_field('masthead_background_image'); ?>')">
         <div>
-            <h1> <?php the_field('masthead_title'); ?> </h1>
+            <h2> <?php the_field('masthead_title'); ?> </h2>
         </div>
     </section>
     <section>
-        <h1> <?php the_field('row_one_title'); ?> </h1>
+        <h3> <?php the_field('row_one_title'); ?> </h3>
         <?php the_field('row_one_text'); ?>
     </section>
     <!-- display post by category -->
